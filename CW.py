@@ -111,5 +111,6 @@ else:
 
 #escrita
 dicionario.write(STRING)
+dicionario.close()
 print("\n"*99)
 print(f"{wl_nome} foi criado com sucesso!!!")
