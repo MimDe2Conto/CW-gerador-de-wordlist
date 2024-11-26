@@ -1,5 +1,3 @@
-from pathlib import Path
-
 #dados comuns ou bsicos
 nome = input("nome: ").strip().lower()
 snome = input("sobrenome: ").strip().lower()
@@ -91,9 +89,7 @@ def Maiusculas():
                     
 wl_nome = input("qual o nome da wordlist?: ")+".txt".lower().strip()
 if wl_nome != ".txt":
-    dicionario = Path(wl_nome)
-    if not dicionario.exists():
-        dicionario.touch()
+    dicionario = open(wl_nome,"w")
 else:
     print("\n"*99+"cancelado por nome vazio")
     exit()
@@ -114,6 +110,6 @@ else:
 
 
 #escrita
-dicionario.write_text(STRING)
+dicionario.write(STRING)
 print("\n"*99)
 print(f"{wl_nome} foi criado com sucesso!!!")
