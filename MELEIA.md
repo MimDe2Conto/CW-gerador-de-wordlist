@@ -10,4 +10,4 @@ como executar: python3 CW.py
 
 3 - depois sera pedida o nome da wordlist
 
-Autor: maahzodd Versao: V1.0
+Autor: MimDe2Conto Versao: V1.0
